@@ -61,7 +61,7 @@ onChangeText={(text)=>this.setState({email:text})}
 />
 <Custominput 
 
-
+// secureTextEntry={true}
  iconType="lock"
  keyboardType="default"
  autoCapitalize="none"

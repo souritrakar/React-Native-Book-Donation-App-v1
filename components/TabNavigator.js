@@ -4,6 +4,7 @@ import BookDonate from "../screens/BookDonate"
 import {Text} from "react-native"
 import {Ionicons} from "@expo/vector-icons"
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import Notifications from "../screens/Notifications"
 const Tab= createBottomTabNavigator()
 
 const TabNavigator=()=>{
@@ -17,6 +18,9 @@ const TabNavigator=()=>{
             else if(route.name === "DONATE"){
               iconName= focused ? 'bookmarks' : 'bookmarks-outline'
             }
+            else if(route.name === "Notifications"){
+                iconName= focused ? 'bell' : 'bell'
+              }
   
             // You can return any component that you like here!
             return <Ionicons  name={iconName} size={size} color={color} />;
@@ -29,6 +33,7 @@ const TabNavigator=()=>{
         <Tab.Screen  name="DONATE" component={BookRequest} />
       
         <Tab.Screen name="REQUEST" component={BookDonate}/>
+        <Tab.Screen component={Notifications} name="Notifications" />
       </Tab.Navigator>
     )
 

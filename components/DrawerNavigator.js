@@ -4,6 +4,11 @@ import {Ionicons} from "@expo/vector-icons"
 import TabNavigator from "./TabNavigator";
 import ProfileScreen from "../screens/ProfileScreen";
 import {createAppContainer} from "react-navigation" 
+import SignOut from "../screens/SignOut";
+
+import DrawerNavigator2 from "./DrawerNavigator2";
+import Notifications from "../screens/Notifications";
+
 const MainNavigator = createDrawerNavigator(
     
     {
@@ -16,6 +21,7 @@ const MainNavigator = createDrawerNavigator(
         },
         screen: TabNavigator
       },
+      
       Profile: {
         navigationOptions: {
           drawerIcon: ({ tintColor }) => (
@@ -26,10 +32,11 @@ const MainNavigator = createDrawerNavigator(
         },
         screen: ProfileScreen
       },
+      
   
-    
-     
-    },
+      
+
+    }
 
   );
 

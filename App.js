@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View,Dimensions } from 'react-native';
 import {NavigationContainer} from "@react-navigation/native"
-
+import { DrawerActions } from '@react-navigation/native'
 import { createStackNavigator} from "@react-navigation/stack"
 import LoginScreen from "./screens/LoginScreen"
 import HomeScreen from './screens/HomeScreen';
@@ -53,11 +53,12 @@ function MyStack(){
        <Stack.Screen
         name="MainScreen"
         component={MainScreen}
-        options={{title:'Main',headerLeft:null}}
+        options={{title:'Main',headerLeft:null, headerShown: false}}
 
 
 
       />
+      
     
 
     </Stack.Navigator>

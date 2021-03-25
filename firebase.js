@@ -1,7 +1,7 @@
 import firebase from "firebase"
 
 const firebaseConfig = {
-  "YOUR_CREDENTIALS_HERE
+  "YOUR_CREDENTIALS_HERE"
   };
 
   firebase.initializeApp(firebaseConfig)

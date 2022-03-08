@@ -75,7 +75,7 @@ export default class BookRequest extends React.Component{
             style={{ width: 30, height: 30,marginBottom:Dimensions.get("window").height/15 }}
             /> 
              <GoogleBookSearch                    
-            apikey={"AIzaSyByHYkjS13YM9FHN-zJ9vf05jd00-_WZ5E"}
+            apikey={"YOUR_API_KEY"}
         
             searchContainerStyle={{marginTop:32}}
             searchInputStyle={{fontSize:16}}
